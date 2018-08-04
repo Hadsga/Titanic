@@ -626,9 +626,9 @@ not be used in the further process.
 
     mean(sqrt(imp$desc$impute$Age$args$model$learner.model$mse))
 
-    ## [1] 9.854596
+    ## [1] 9.878592
 
-6 Feature selection
+5 Feature selection
 -------------------
 
 After the exploratory data analyses and the preprocessing let´s take a
@@ -660,12 +660,12 @@ target variable.
 
 ![](Model_Titanic_files/figure-markdown_strict/unnamed-chunk-21-1.png)
 
-7 Model Building
+6 Model Building
 ----------------
 
 For modeling an enseble of 6 potential models will be used.
 
-7.1 RF
+6.1 RF
 ------
 
 The first model is a Random Forest classifier.
@@ -701,7 +701,7 @@ The first model is a Random Forest classifier.
     ## acc.test.mean 
     ##     0.8376389
 
-7.2 KNN
+6.2 KNN
 -------
 
 -   The second model is a K-Nearest-Neighbor classifier.
@@ -749,7 +749,7 @@ The first model is a Random Forest classifier.
     ## acc.test.mean 
     ##     0.8335234
 
-7.3 Deep Learning
+6.3 Deep Learning
 -----------------
 
 The thrid model is single-hidden-layer neural network.
@@ -796,7 +796,7 @@ The thrid model is single-hidden-layer neural network.
     ## acc.test.mean 
     ##     0.8361423
 
-7.4 GBM
+6.4 GBM
 -------
 
 The fourth model is a Gradient Boosting Machine.
@@ -848,7 +848,7 @@ The fourth model is a Gradient Boosting Machine.
     ## acc.test.mean 
     ##     0.8390996
 
-7.5 SVM
+6.5 SVM
 -------
 
 The fifth model is a Support Vector Machine with a radial kernel.
@@ -896,7 +896,7 @@ The fifth model is a Support Vector Machine with a radial kernel.
     ## acc.test.mean 
     ##     0.8297695
 
-7.6 Glmnet
+6.6 Glmnet
 ----------
 
 -   The six model is an elastic net regression.
@@ -946,7 +946,7 @@ The fifth model is a Support Vector Machine with a radial kernel.
     ## acc.test.mean 
     ##     0.8349964
 
-7.7 Model evaluation
+6.7 Model evaluation
 --------------------
 
 To evaluate the model performance a benchmark experiemnt will be used.
